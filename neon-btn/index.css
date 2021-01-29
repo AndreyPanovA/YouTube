@@ -32,6 +32,8 @@ body {
   align-items:center;
   background-color: #141414;
   height: 100vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 38%, rgba(0,212,255,1) 100%);
 }
 .neon-btn {
   display: flex;
@@ -41,7 +43,7 @@ body {
   text-decoration: none;
 }
 .neon-btn__item {
-    font-size: 3rem;
+    font-size: 7rem;
     text-align: center;
     line-height: 1;
     color: white;
@@ -53,7 +55,7 @@ body {
 }
 .text:focus,
 .text:hover {
-  color: #c6e2ff;
+  color: #3a8cb4;
   text-shadow:
   0 0 2px rgba(86, 165, 156, 0.91),
   0 0 10px rgba(202,228,225,0.34),
@@ -61,6 +63,8 @@ body {
   0 0 7px rgba(31,122,242,0.92),
   0 0 11px rgba(31,132,242,0.88),
   0 0 16px rgba(31,132,242,0.91);
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
 }
 
 @keyframes neon-anim {
