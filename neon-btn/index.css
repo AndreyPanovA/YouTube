@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-1: 0 0 6px rgba(202,228,225,0.92);
+    --color-2: 0 0 30px rgba(202,228,225,0.34);
+    --color-3: 0 0 30px rgba(202,228,225,0.34);
+    --color-4: 0 0 12px rgba(30,132,242,0.52);
+    --color-5:0 0 21px rgba(30,132,242,0.92);
+    --color-6:0 0 34px rgba(30,132,242,0.78);
+    --color-7: 0 0 54px rgba(30,132,242,0.92); 
+    /* to */
+    --to-color-1: 0 0 6px rgba(202,228,225,0.98);
+    --to-color-2: 0 0 30px rgba(202,228,225,0.42);
+    --to-color-3:0 0 12px rgba(30,132,242,0.58);
+    --to-color-4:  0 0 22px rgba(30,132,242,0.84);
+    --to-color-5:0 0 0 38px rgba(30,132,242,0.88);
+    --to-color-6:0 0 60px rgba(30,132,242,1);
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family:  cursive;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  background-color: #141414;
+  height: 100vh;
+}
+.neon-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.neon-btn__item {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    animation: neon-anim .5s ease-in-out infinite alternate;
+  }
+.text {
+  color: white;
+  text-decoration: none;
+}
+.text:focus,
+.text:hover {
+  color: #c6e2ff;
+  text-shadow:
+  0 0 2px rgba(86, 165, 156, 0.91),
+  0 0 10px rgba(202,228,225,0.34),
+  0 0 4px rgba(31,132,242,0.52),
+  0 0 7px rgba(31,122,242,0.92),
+  0 0 11px rgba(31,132,242,0.88),
+  0 0 16px rgba(31,132,242,0.91);
+}
+
+@keyframes neon-anim {
+    from {
+      text-shadow:var(--color-1),
+      var(--color-2),
+      var(--color-3),
+      var(--color-4),
+      var(--color-5),
+      var(--color-6)
+    }
+    to {
+      text-shadow:var(--to-color-1),
+      var(--to-color-2),
+      var(--to-color-3),
+      var(--to-color-4),
+      var(--to-color-5),
+      var(--to-color-6)
+    }
+  } 
